@@ -60,5 +60,4 @@ if player_score > computer_score:
 else:
     print("Computer won the game!")
 
-
 print("\nThanks for playing!")
