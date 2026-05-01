@@ -12,6 +12,7 @@ A simple command-line Rock Paper Scissors game built with Python.
 
 ## Example Output
 
+```text
 Play to how many wins? (3 or 5): 3
 
 ----- ROUND 1 -----
@@ -19,11 +20,6 @@ Player: rock
 Computer: scissors
 You win!
 Score → Player: 1 | Computer: 0
-
-## Run
-
-```bash
-python main.py
 ```
 
 ## Notes
