@@ -3,25 +3,29 @@
 A simple command-line Rock Paper Scissors game built with Python.
 
 ## Features
-<<<<<<< HEAD
-- Player vs Computer
-- Score tracking
-- First to 3 or 5 wins
-- Input validation
 
-## Run
-```bash
-python main.py
-=======
-
-* Player vs Computer
+* Player vs Computer gameplay
 * Score tracking
 * First to 3 or 5 wins
 * Input validation
+* Modular structure using functions
+
+## Example Output
+
+Play to how many wins? (3 or 5): 3
+
+----- ROUND 1 -----
+Player: rock
+Computer: scissors
+You win!
+Score → Player: 1 | Computer: 0
 
 ## Run
 
 ```bash
 python main.py
 ```
->>>>>>> 2cfdabf0d0b91da445813fbec4681afba2ef1f11
+
+## Notes
+
+This project was built while learning Python fundamentals and later refactored using functions.
