@@ -1,4 +1,4 @@
-import random
+from utils.game_logic import get_computer_choice, decide_winner
 
 options = ("rock", "paper", "scissors")
 
@@ -27,21 +27,6 @@ def get_player_choice(options):
             print("Invalid choice. Please try again.")
 
     return player
-
-
-def get_computer_choice(options):
-    return random.choice(options)
-
-
-def decide_winner(player, computer):
-    if player == computer:
-        return "tie"
-    elif (player == "rock" and computer == "scissors") or \
-         (player == "paper" and computer == "rock") or \
-         (player == "scissors" and computer == "paper"):
-        return "player"
-    else:
-        return "computer"
 
 
 def print_score(player_score, computer_score):
