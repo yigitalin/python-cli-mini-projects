@@ -20,6 +20,14 @@ A collection of beginner-friendly command-line projects built while learning Pyt
 * Withdraw money
 * Menu-based navigation
 
+### 🎰 Slot Machine
+
+* Spin-based gameplay
+* Betting system
+* Balance tracking
+* Random symbol generation
+* Payout system based on symbol matches
+
 ---
 
 ## 🧠 Purpose
@@ -30,16 +38,18 @@ This repository is focused on practicing core Python concepts:
 * Loops
 * Conditionals
 * User input handling
+* Random module usage
 * Basic project structure
 
 ---
 
 ## 🗂️ Project Structure
 
-```
+```text
 python-cli-mini-projects/
 ├── rock-paper-scissors/
 ├── banking/
+├── slot_machine/
 ```
 
 ---
@@ -57,3 +67,4 @@ python main.py
 ## 🚀 Notes
 
 These projects were built step by step while learning Python fundamentals and improving code structure.
+Future projects will continue to expand this collection.
