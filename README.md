@@ -29,6 +29,14 @@ A collection of beginner-friendly command-line projects built while learning Pyt
 * Multiple winning rows
 * Payout system based on symbol matches
 
+### 🕺 Hangman Game
+
+* Random word selection
+* Letter guessing system
+* Wrong guess tracking
+* ASCII hangman visualization
+* Win/Lose conditions
+
 ---
 
 ## 🧠 Purpose
@@ -51,6 +59,7 @@ python-cli-mini-projects/
 ├── rock-paper-scissors/
 ├── banking/
 ├── slot_machine/
+├── hangman/
 ```
 
 ---
