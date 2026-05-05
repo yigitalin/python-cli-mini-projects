@@ -22,10 +22,11 @@ A collection of beginner-friendly command-line projects built while learning Pyt
 
 ### 🎰 Slot Machine
 
+* 3x3 slot grid system
 * Spin-based gameplay
 * Betting system
 * Balance tracking
-* Random symbol generation
+* Multiple winning rows
 * Payout system based on symbol matches
 
 ---
@@ -67,4 +68,4 @@ python main.py
 ## 🚀 Notes
 
 These projects were built step by step while learning Python fundamentals and improving code structure.
-Future projects will continue to expand this collection.
+Each project builds upon the previous one, increasing in complexity and logic.
