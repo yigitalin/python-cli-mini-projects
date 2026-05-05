@@ -1,3 +1,5 @@
+# R-P-S PROGRAM
+
 from utils.game_logic import get_computer_choice, decide_winner
 
 def get_max_score():
