@@ -1,27 +1,37 @@
-# Rock Paper Scissors CLI
+# Python CLI Mini Projects
 
-A simple command-line Rock Paper Scissors game built with Python.
+A collection of beginner-friendly command-line projects built while learning Python.
 
-## Features
+## Projects
 
-* Player vs Computer gameplay
+### 🎮 Rock Paper Scissors
+
+* Player vs Computer
 * Score tracking
 * First to 3 or 5 wins
-* Input validation
 * Modular structure using functions
 
-## Example Output
+### 🏦 Banking Program
 
-```text
-Play to how many wins? (3 or 5): 3
+* Show balance
+* Deposit money
+* Withdraw money
+* Menu-based navigation
 
------ ROUND 1 -----
-Player: rock
-Computer: scissors
-You win!
-Score → Player: 1 | Computer: 0
+## Purpose
+
+This repository contains small projects focused on practicing:
+
+* functions
+* loops
+* conditionals
+* user input
+* basic project structure
+
+## How to Run
+
+Navigate into any project folder and run:
+
+```bash
+python main.py
 ```
-
-## Notes
-
-This project was built while learning Python fundamentals and later refactored using functions.
