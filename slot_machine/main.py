@@ -2,35 +2,43 @@
 
 import random
 
-def spin_row():
+def spin_grid():
     symbols = ['🍒', '🍉', '🍋', '🔔', '⭐']
+    grid = []
 
-    # results = []
-    # for symbol in range(3):
-    #     results.append(random.choice(symbols))
-    # return results
+    for _ in range(3):
+        row = [random.choice(symbols) for _ in range(3)]
+        grid.append(row)
 
-    return [random.choice(symbols) for _ in range(3)]
+    return grid
 
 
-def print_row(row):
+def print_grid(grid):
     print("*************")
-    print(" | ".join(row))
+    for row in grid:
+        print(" | ".join(row))
     print("*************")
 
-def get_payout(row, bet):
-    if row[0] == row[1] == row[2]:
-        if row[0] == '🍒':
-            return bet * 3
-        elif row[0] == '🍉':
-            return bet * 4
-        elif row[0] == '🍋':
-            return bet * 5
-        elif row[0] == '🔔':
-            return bet * 10
-        elif row[0] == '⭐':
-            return bet * 20
-    return 0
+def get_payout(grid, bet):
+    total_payout = 0
+    winning_rows = []
+    
+    for i, row in enumerate(grid):
+        if row[0] == row[1] == row[2]:
+            winning_rows.append(i + 1)
+
+            if row[0] == '🍒':
+                total_payout += bet * 3
+            elif row[0] == '🍉':
+                total_payout += bet * 4
+            elif row[0] == '🍋':
+                total_payout += bet * 5
+            elif row[0] == '🔔':
+                total_payout += bet * 10
+            elif row[0] == '⭐':
+                total_payout += bet * 20
+
+    return total_payout, winning_rows
     
 
 def main():
@@ -62,14 +70,15 @@ def main():
 
         balance -= bet
 
-        row = spin_row()
+        grid = spin_grid()
         print("Spinning...\n")
-        print_row(row)
+        print_grid(grid)
 
-        payout = get_payout(row, bet)
+        payout, winning_rows = get_payout(grid, bet)
 
         if payout > 0:
             print(f"You won ${payout}")
+            print(f"Winning rows: {winning_rows}")
         else:
             print("Sorry you lost this round")
 
